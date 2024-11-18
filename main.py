@@ -22,6 +22,11 @@ movies = [
     {"title": "The Lion King", "genre": "Animation", "year": 90, "age_rating": "G"},
     {"title": "The Incredibles 2", "genre": "Animation", "year": 10, "age_rating": "PG"},
     {"title": "Kiki's Delivery Service", "genre": "Animation", "year": 90, "age_rating": "G"},
+    {"title": "Joker", "genre": "Drama", "year": 10, "age_rating": "R"},
+    {"title": "Napolean Dynamite", "genre": "Comedy", "year": 00, "age_rating": "PG"},
+    {"title": "Kiki's Delivery Service", "genre": "Animation", "year": 90, "age_rating": "G"},
+    {"title": "Ex Machina", "genre": "Indie", "year": 10, "age_rating": "R"},
+    {"title": "1917", "genre": "Thriller", "year": 10, "age_rating": "R"}
 ]
 #asks the user questions
 def get_user_preferences():
