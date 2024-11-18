@@ -28,36 +28,57 @@ movies = [
     {"title": "Ex Machina", "genre": "Indie", "year": 10, "age_rating": "R"},
     {"title": "1917", "genre": "Thriller", "year": 10, "age_rating": "R"}
 ]
+
+#list of TV shows with their genre, year, and age rating
+tvShows = [
+    {"title": "Breaking Bad", "genre": "Drama", "year": 00, "age_rating": "R"}
+    {"title": "Chernobyl", "genre": "Thriller", "year": 10, "age_rating": "R"}
+    {"title": "Avatar: The Last Airbender", "genre": "Animation", "year": 00, "age_rating": "G"}
+    {"title": "Game of Thrones", "genre": "Drama", "year": 10, "age_rating": "R"}
+    {"title": "Fullmetal Alchemist: Brotherhood", "genre": "Animation", "year": 00, "age_rating": "PG-13"}
+    {"title": "Sherlock", "genre": "Crime", "year": 10, "age_rating": "PG-13"}
+    {"title": "Attack on Titan", "genre": "Animation", "year": 10, "age_rating": "R"}
+    {"title": "The Office", "genre": "Comedy", "year": 00, "age_rating": "PG-13"}
+]
+
 #asks the user questions
 def get_user_preferences():
     
     print("Welcome to the Mood Movie Recommendation System!")
-    preferred_genres = input("What type of movie are you in the mood for? (Separate by comma, e.g., Drama, Action): ")
+
+    motv = input("Do you want to watch a movie or a TV show? (Enter 'movie' or 'tv show'): ").strip().lower()
+    while motv not in ['movie', 'tv show']:
+        motv = input("Invalid choice. Please enter 'movie' or 'tv show': ").strip().lower() 
     
+    preferred_genres = input("What type of movie are you in the mood for? (Separate by comma, e.g., Drama, Action): ")
     preferred_genres = [genre.strip().capitalize() for genre in preferred_genres.split(',')]
     
-    min_year = int(input("What age generation are you looking for? (e.g., 80, 90, 00, 10, 20): "))
+    decade = int(input("What decade are you looking for? (e.g., 70, 80, 90, 00, 10, 20): "))
     
     age_ratings = input("What age ratings do you prefer? (Separate by comma, e.g., G, PG, PG-13, R): ")
-    
     age_ratings = [rating.strip().upper() for rating in age_ratings.split(',')]
     
-    return preferred_genres, min_year, max_year, age_ratings
+    return preferred_genres, decade, age_ratings
 
 #filters the database based on the answers
-def recommend_movies(preferred_genres, min_year, max_year, age_ratings):
+def recommend_movies(preferred_genres, decade, age_ratings):
     recommended = []
     for movie in movies:
         if (movie['genre'] in preferred_genres and
-            min_year <= movie['year'] <= max_year and
+            decade <= movie['year'] <= max_year and
             movie['age_rating'] in age_ratings):
             recommended.append(movie['title'])
+    for tvShow in tvShow:
+        if (tvShow['genre'] in preferred_genres and
+            decade <= tvShow['year'] <= max_year and
+            tvShow['age_rating'] in age_ratings):
+            recommended.append(tvShow['title'])
     return recommended
 
 #Returns the filtered movies to the user
 def main():
-    genre, min_year, max_year, rating = get_user_preferences()
-    recommended = recommend_movies(genre, min_year, max_year, rating)
+    genre, decade, rating = get_user_preferences()
+    recommended = recommend_movies(genre, decade, rating)
     if recommended:
         print("\nWe recommend watching these movies!:")
         for title in recommended:
