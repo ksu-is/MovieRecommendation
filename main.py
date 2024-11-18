@@ -39,6 +39,12 @@ tvShows = [
     {"title": "Sherlock", "genre": "Crime", "year": 10, "age_rating": "PG-13"}
     {"title": "Attack on Titan", "genre": "Animation", "year": 10, "age_rating": "R"}
     {"title": "The Office", "genre": "Comedy", "year": 00, "age_rating": "PG-13"}
+    {"title": "Better Call Saul", "genre": "Drama", "year": 10, "age_rating": "R"}
+    {"title": "Clarkson's Farm", "genre": "Comedy", "year": 20, "age_rating": "PG-13"}
+    {"title": "Firefly", "genre": "Action", "year": 00, "age_rating": "PG-13"}
+    {"title": "Gravity Fall", "genre": "Comedy", "year": 10, "age_rating": "PG"}
+    {"title": "Cowboy Bebop", "genre": "Animation", "year": 90, "age_rating": "PG-13"}
+    {"title": "Nathan for You", "genre": "Comedy", "year": 10, "age_rating": "PG-13"}
 ]
 
 #asks the user questions
@@ -75,8 +81,8 @@ def recommend_content(motv, preferred_genres, decade, age_ratings):
 
 #Returns the filtered movies to the user
 def main():
-    genre, decade, rating = get_user_preferences()
-    recommended = recommend_movies(genre, decade, rating)
+    motv, genre, decade, rating = get_user_preferences()
+    recommended = recommend_movies(motv, genre, decade, rating)
     if recommended:
         print("\nWe recommend watching these movies!:")
         for title in recommended:
