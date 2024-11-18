@@ -61,18 +61,16 @@ def get_user_preferences():
     return preferred_genres, decade, age_ratings
 
 #filters the database based on the answers
-def recommend_movies(preferred_genres, decade, age_ratings):
+def recommend_content(motv, preferred_genres, decade, age_ratings):
     recommended = []
-    for movie in movies:
-        if (movie['genre'] in preferred_genres and
-            decade <= movie['year'] <= max_year and
-            movie['age_rating'] in age_ratings):
-            recommended.append(movie['title'])
-    for tvShow in tvShow:
-        if (tvShow['genre'] in preferred_genres and
-            decade <= tvShow['year'] <= max_year and
-            tvShow['age_rating'] in age_ratings):
-            recommended.append(tvShow['title'])
+    database = movies if motv == 'movie' else tvShows
+
+    for content in database:
+        if (content['genre'] in preferred_genres and
+            content['year'] == decade and
+            content['age_rating'] in age_ratings):
+            recommended.append(content['title'])
+
     return recommended
 
 #Returns the filtered movies to the user
