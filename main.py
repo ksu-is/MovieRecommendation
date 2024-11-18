@@ -25,8 +25,8 @@ movies = [
 ]
 #asks the user questions
 def get_user_preferences():
-    print("Welcome to the Movie Recommendation System!")
-    preferred_genres = input("What genres of movies do you prefer? (Separate by comma, e.g., Drama, Action): ")
+    print("Welcome to the Mood Movie Recommendation System!")
+    preferred_genres = input("What type of movie are you in the mood for? (Separate by comma, e.g., Drama, Action): ")
     preferred_genres = [genre.strip().capitalize() for genre in preferred_genres.split(',')]
     min_year = int(input("What is the earliest release year you prefer? (e.g., 2000): "))
     max_year = int(input("What is the latest release year you prefer? (e.g., 2020): "))
