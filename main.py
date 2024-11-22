@@ -65,14 +65,14 @@ def get_user_preferences():
     while motv not in ['movie', 'tv show']:
         motv = input("Invalid choice. Please enter 'movie' or 'tv show': ").strip().lower() 
     
-    preferred_genres = input("What type of movie are you in the mood for? (Separate by comma, e.g., Drama, Action): ")
+    preferred_genres = input("What type of movie are you in the mood for? (Separate by comma ex: Drama, Action): ")
     preferred_genres = [genre.strip().capitalize() for genre in preferred_genres.split(',')]
     
     decade = int(input("What decade are you looking for? (ex: 70, 80, 90, 00, 10, 20): "))
     while decade not in [50, 70, 80, 90, 00, 10, 20]:
         decade = int(input("Invalid decade. Enter a valid decade (e.g., 70, 80, 90, 00, 10, 20): "))
 
-    age_ratings = input("What age ratings do you prefer? (Separate by comma, e.g., G, PG, PG-13, R): ")
+    age_ratings = input("What age ratings do you prefer? (Separate by comma ex: G, PG, PG-13, R): ")
     age_ratings = [rating.strip().upper() for rating in age_ratings.split(',')]
     
     return motv, preferred_genres, decade, age_ratings
