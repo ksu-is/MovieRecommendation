@@ -45,6 +45,15 @@ tvShows = [
     {"title": "Gravity Fall", "genre": "Comedy", "year": 10, "age_rating": "PG"}
     {"title": "Cowboy Bebop", "genre": "Animation", "year": 90, "age_rating": "PG-13"}
     {"title": "Nathan for You", "genre": "Comedy", "year": 10, "age_rating": "PG-13"}
+    {"title": "Friends", "genre": "Comedy", "year": 90, "age_rating": "PG-13"}
+    {"title": "Dragon Ball Z", "genre": "Animation", "year": 90, "age_rating": "PG"}
+    {"title": "Pride and Prejudice", "genre": "Drama", "year": 90, "age_rating": "PG"}
+    {"title": "Twin Peaks", "genre": "Crime", "year": 90, "age_rating": "R"}
+    {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"}
+    {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"}
+    {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"}
+    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"}
+    
 ]
 
 #asks the user questions
