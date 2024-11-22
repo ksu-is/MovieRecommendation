@@ -104,14 +104,24 @@ def recommend_content(motv, preferred_genres, decade, age_ratings):
 
 #Returns the filtered movies to the user
 def main():
-    motv, preferred_genres, decade, age_ratings = get_user_preferences()
-    recommended = recommend_content(motv, preferred_genres, decade, age_ratings)
-    if recommended:
-        print("\nWe recommend watching these movies!:")
-        for title in recommended:
-            print(title)
-    else:
-        print("\nNo movies found that match your criteria.")
+    while True:  # Add a loop to allow rerunning the program
+        motv, preferred_genres, decade, age_ratings = get_user_preferences()
+        recommended = recommend_content(motv, preferred_genres, decade, age_ratings)
+        if recommended:
+            print(f"\nWe recommend watching these {motv}s!:")
+            for title in recommended:
+                print(title)
+        else:
+            print(f"\nNo {motv}s found that match your criteria.")
+
+        # Ask the user if they want to rerun the program
+        rerun = input("\nWould you like to make another search? (yes/no): ").strip().lower()
+        while rerun not in ['yes', 'no']:
+            rerun = input("Invalid input. Please enter 'yes' or 'no': ").strip().lower()
+
+        if rerun == 'no':  # Exit the loop if the user chooses not to rerun
+            print("Goodbye! Enjoy your movie or show!")
+            break
 
 if __name__ == "__main__":
     main()
