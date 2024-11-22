@@ -31,28 +31,28 @@ movies = [
 
 #list of TV shows with their genre, year, and age rating
 tvShows = [
-    {"title": "Breaking Bad", "genre": "Drama", "year": 00, "age_rating": "R"}
-    {"title": "Chernobyl", "genre": "Thriller", "year": 10, "age_rating": "R"}
-    {"title": "Avatar: The Last Airbender", "genre": "Animation", "year": 00, "age_rating": "G"}
-    {"title": "Game of Thrones", "genre": "Drama", "year": 10, "age_rating": "R"}
-    {"title": "Fullmetal Alchemist: Brotherhood", "genre": "Animation", "year": 00, "age_rating": "PG-13"}
-    {"title": "Sherlock", "genre": "Crime", "year": 10, "age_rating": "PG-13"}
-    {"title": "Attack on Titan", "genre": "Animation", "year": 10, "age_rating": "R"}
-    {"title": "The Office", "genre": "Comedy", "year": 00, "age_rating": "PG-13"}
-    {"title": "Better Call Saul", "genre": "Drama", "year": 10, "age_rating": "R"}
-    {"title": "Clarkson's Farm", "genre": "Comedy", "year": 20, "age_rating": "PG-13"}
-    {"title": "Firefly", "genre": "Action", "year": 00, "age_rating": "PG-13"}
-    {"title": "Gravity Fall", "genre": "Comedy", "year": 10, "age_rating": "PG"}
-    {"title": "Cowboy Bebop", "genre": "Animation", "year": 90, "age_rating": "PG-13"}
-    {"title": "Nathan for You", "genre": "Comedy", "year": 10, "age_rating": "PG-13"}
-    {"title": "Friends", "genre": "Comedy", "year": 90, "age_rating": "PG-13"}
-    {"title": "Dragon Ball Z", "genre": "Animation", "year": 90, "age_rating": "PG"}
-    {"title": "Pride and Prejudice", "genre": "Drama", "year": 90, "age_rating": "PG"}
-    {"title": "Twin Peaks", "genre": "Crime", "year": 90, "age_rating": "R"}
-    {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"}
-    {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"}
-    {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"}
-    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"}
+    {"title": "Breaking Bad", "genre": "Drama", "year": 00, "age_rating": "R"},
+    {"title": "Chernobyl", "genre": "Thriller", "year": 10, "age_rating": "R"},
+    {"title": "Avatar: The Last Airbender", "genre": "Animation", "year": 00, "age_rating": "G"},
+    {"title": "Game of Thrones", "genre": "Drama", "year": 10, "age_rating": "R"},
+    {"title": "Fullmetal Alchemist: Brotherhood", "genre": "Animation", "year": 00, "age_rating": "PG-13"},
+    {"title": "Sherlock", "genre": "Crime", "year": 10, "age_rating": "PG-13"},
+    {"title": "Attack on Titan", "genre": "Animation", "year": 10, "age_rating": "R"},
+    {"title": "The Office", "genre": "Comedy", "year": 00, "age_rating": "PG-13"},
+    {"title": "Better Call Saul", "genre": "Drama", "year": 10, "age_rating": "R"},
+    {"title": "Clarkson's Farm", "genre": "Comedy", "year": 20, "age_rating": "PG-13"},
+    {"title": "Firefly", "genre": "Action", "year": 00, "age_rating": "PG-13"},
+    {"title": "Gravity Fall", "genre": "Comedy", "year": 10, "age_rating": "PG"},
+    {"title": "Cowboy Bebop", "genre": "Animation", "year": 90, "age_rating": "PG-13"},
+    {"title": "Nathan for You", "genre": "Comedy", "year": 10, "age_rating": "PG-13"},
+    {"title": "Friends", "genre": "Comedy", "year": 90, "age_rating": "PG-13"},
+    {"title": "Dragon Ball Z", "genre": "Animation", "year": 90, "age_rating": "PG"},
+    {"title": "Pride and Prejudice", "genre": "Drama", "year": 90, "age_rating": "PG"},
+    {"title": "Twin Peaks", "genre": "Crime", "year": 90, "age_rating": "R"},
+    {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"},
+    {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"},
+    {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"},
+    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},
     
 ]
 
