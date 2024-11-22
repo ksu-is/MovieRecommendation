@@ -1,5 +1,6 @@
 #list of movies with their genre, year, and age rating
 movies = [
+#27 Movie options
     {"title": "The Shawshank Redemption", "genre": "Drama", "year": 90, "age_rating": "R"},
     {"title": "The Godfather", "genre": "Crime", "year": 70, "age_rating": "R"},
     {"title": "The Dark Knight", "genre": "Action", "year": 00, "age_rating": "PG-13"},
@@ -26,12 +27,15 @@ movies = [
     {"title": "Napolean Dynamite", "genre": "Comedy", "year": 00, "age_rating": "PG"},
     {"title": "Kiki's Delivery Service", "genre": "Animation", "year": 90, "age_rating": "G"},
     {"title": "Ex Machina", "genre": "Indie", "year": 10, "age_rating": "R"},
-    {"title": "1917", "genre": "Thriller", "year": 10, "age_rating": "R"}
+    {"title": "1917", "genre": "Thriller", "year": 10, "age_rating": "R"},
+    {"title": "Spider-Man: Across the Spider-Verse", "genre": "Animation", "year": 20, "age_rating": "PG"},
+    {"title": "Dune", "genre": "Action", "year": 10, "age_rating": "PG-13"},
+    {"title": "Dune: Part Two", "genre": "Action", "year": 20, "age_rating": "PG-13"},
+    {"title": "Alien", "genre": "Thriller", "year": 70, "age_rating": "R"},
 ]
 
 #list of TV shows with their genre, year, and age rating
 tvShows = [
-
     {"title": "Breaking Bad", "genre": "Drama", "year": 00, "age_rating": "R"},
     {"title": "Chernobyl", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "Avatar: The Last Airbender", "genre": "Animation", "year": 00, "age_rating": "G"},
@@ -53,7 +57,15 @@ tvShows = [
     {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"},
     {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"},
-    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},   
+    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},
+    {"title": "Battlestar Galactica", "genre": "Sci-Fi", "year": 00, "age_rating": "PG-13"},   
+    {"title": "Mad Men", "genre": "Drama", "year": 00, "age_rating": "R"},
+    {"title": "The Boys", "genre": "Action", "year": 20, "age_rating": "R"},
+    {"title": "Invincible", "genre": "Animation", "year": 20, "age_rating": "R"},
+    {"title": "The Adventures of Sherlock Holmes", "genre": "Crime", "year": 80, "age_rating": "PG"},
+    {"title": "Monster", "genre": "Crime", "year": 00, "age_rating": "PG-13"},
+    {"title": "The Mandalorian", "genre": "Action", "year": 20, "age_rating": "PG-13"},
+    {"title": "House of Cards", "genre": "Drama", "year": 10, "age_rating": "R"},
 ]
 
 #asks the user questions
