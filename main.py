@@ -31,6 +31,7 @@ movies = [
 
 #list of TV shows with their genre, year, and age rating
 tvShows = [
+
     {"title": "Breaking Bad", "genre": "Drama", "year": 00, "age_rating": "R"},
     {"title": "Chernobyl", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "Avatar: The Last Airbender", "genre": "Animation", "year": 00, "age_rating": "G"},
@@ -52,8 +53,7 @@ tvShows = [
     {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"},
     {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"},
-    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},
-    
+    {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},   
 ]
 
 #asks the user questions
@@ -68,12 +68,14 @@ def get_user_preferences():
     preferred_genres = input("What type of movie are you in the mood for? (Separate by comma, e.g., Drama, Action): ")
     preferred_genres = [genre.strip().capitalize() for genre in preferred_genres.split(',')]
     
-    decade = int(input("What decade are you looking for? (e.g., 70, 80, 90, 00, 10, 20): "))
-    
+    decade = int(input("What decade are you looking for? (ex: 70, 80, 90, 00, 10, 20): "))
+    while decade not in [50, 70, 80, 90, 00, 10, 20]:
+        decade = int(input("Invalid decade. Enter a valid decade (e.g., 70, 80, 90, 00, 10, 20): "))
+
     age_ratings = input("What age ratings do you prefer? (Separate by comma, e.g., G, PG, PG-13, R): ")
     age_ratings = [rating.strip().upper() for rating in age_ratings.split(',')]
     
-    return preferred_genres, decade, age_ratings
+    return motv, preferred_genres, decade, age_ratings
 
 #filters the database based on the answers
 def recommend_content(motv, preferred_genres, decade, age_ratings):
@@ -90,8 +92,8 @@ def recommend_content(motv, preferred_genres, decade, age_ratings):
 
 #Returns the filtered movies to the user
 def main():
-    motv, genre, decade, rating = get_user_preferences()
-    recommended = recommend_movies(motv, genre, decade, rating)
+    motv, preferred_genres, decade, age_ratings = get_user_preferences()
+    recommended = recommend_content(motv, preferred_genres, decade, age_ratings)
     if recommended:
         print("\nWe recommend watching these movies!:")
         for title in recommended:
