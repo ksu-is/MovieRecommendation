@@ -7,8 +7,7 @@
 - [x] Updated projectroadmap.md     
 
 # Sprint 2:
-- [ ] Make small updates and commit messages in repository.
-- [ ] 
+- [ ] Make small updates and commit messages in repository.    
 
 # Sprint 3:
 - [ ] Create slide presentation.
