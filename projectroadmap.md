@@ -1,18 +1,18 @@
 # Sprint 1:
 - [x] Proposed a topic and submitted it for approval.
-- [x] Awaiting approval.
+- [X] Explored at existing Python code base related my topic.
 - [x] Joined KSU-IS.
-- [x] Created a repository on GitHub.
-- [x] Developed a README.md and projectroadmap.md.
-- [x] Researched similar repositories within the organization related to the program.     
+- [x] Forked a repository into KSU-is.
+- [x] Updated README.md
+- [x] Updated projectroadmap.md     
 
 # Sprint 2:
-- [x] make small updates and commit messages in repository
-- [x] 6 code changes
+- [] Make small updates and commit messages in repository.
+- [] 
 
 # Sprint 3:
-- [ ] create slide presentation
-- [ ] Compile mistakes and lessons learned
+- [ ] Create slide presentation.
+- [ ] Compile mistakes and lessons learned.
 
 #Present
-- [ ] Present powerpoint
+- [ ] Present powerpoint.
