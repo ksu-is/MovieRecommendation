@@ -5,7 +5,7 @@
 - [x] Forked a repository into KSU-is.
 - [x] Updated README.md
 - [x] Tested code and made sure it worked.
-- [x] Updated projectroadmap.md     
+- [x] Updated projectroadmap.md    
 
 # Sprint 2:
 - [ ] Make small updates and commit messages in repository.    
